@@ -575,6 +575,7 @@ button {
   border-radius: 4px;
   overflow: hidden;
   min-height: 450px;
+  min-width: 31.6%;
   max-width: 31.6%;
   margin-bottom: 3%;
 }
@@ -750,8 +751,7 @@ button {
 
 .principles {
   margin-top: -5px;
-  background: #010917;
-  background: url(../img/principles-min.png) no-repeat;
+  background: #010917 url(../img/principles-min.png) no-repeat;
   background-size: 100% 100%;
   background-position: center center;
 }
