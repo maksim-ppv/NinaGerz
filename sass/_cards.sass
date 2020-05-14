@@ -1,16 +1,16 @@
-.cards 
+.cards
+    margin-top: -4px 
     background: radial-gradient(50% 50% at 50% 50%, #012252 0%, #010813 100%)
-.container 
-
 .cards__title
     padding-top: 50px
+.section__title
     font-family: Alice
     font-style: normal
     font-weight: normal
     font-size: 32px
     line-height: 45px
-    text-align: center 
-.cards__subtitle 
+    text-align: center
+.section__description
     display: block
     font-family: Open Sans
     font-style: normal
@@ -19,12 +19,15 @@
     line-height: 25px
     text-align: center
     margin: auto
+    padding: 0px 10px
+.cards__description 
     max-width: 524px
     padding-bottom: 72px
 .cards__block 
     display: flex
     flex-wrap: wrap
     justify-content: space-between
+    padding-bottom: 70px
 .cards__item
     display: flex
     justify-content: space-between
@@ -46,7 +49,9 @@
     font-size: 19px
     line-height: 25px
     text-align: center
-    color: #4C4E51 
+    color: #4C4E51
+.item__content
+    width: 100% 
 .item__text 
     display: block
     font-family: Open Sans
@@ -56,6 +61,7 @@
     line-height: 20px
     text-align: center
     color: #707579
+    padding: 0 10px
 .item__button 
     text-decoration: none
     cursor: pointer
@@ -76,6 +82,9 @@
 .item__modal
     display: none
     background: rgba(1, 8, 18, 0.87)
+    align-items: center
+    justify-content: space-around
+    padding: 20px 0
     position: fixed
     top: 0
     left: 0
@@ -84,22 +93,22 @@
     height: 100%
     overflow: hidden
     outline: 0
-    transform: scale(0)
-    opacity: 0
+    opacity: 1
     overflow-y: scroll
-    animation-delay: 2s
 .item__shadow
     display: flex
     flex-direction: column
     align-items: center
+    justify-content: space-around
     position: absolute
+    top: 10px
     max-width: 460px
     background-color: #fff
-    left: 50%
-    transform: translate(-50%, 0)
-    margin: 20px
+    transform: scale(0)
+    margin: 20px 0
 .modal__active
-    display: block
+    display: flex
+.animation__modal
     animation: modal 1s ease-in-out
     animation-fill-mode: forwards
 .shadow__button
@@ -114,8 +123,6 @@
     text-align: center
     color: #707579
     padding: 20px
-.link__modal
-    display: none
 @keyframes modal
     0%
         transform: scale(0)
