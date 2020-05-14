@@ -9,6 +9,15 @@ body {
   position: relative;
 }
 
+.overflow-hidden {
+  width: 100%;
+  overflow: hidden;
+}
+
+.btn_close {
+  display: none !important;
+}
+
 .container {
   max-width: 960px;
   margin: auto;
@@ -174,6 +183,7 @@ button {
   letter-spacing: 2px;
   -webkit-animation: btn 2.5s infinite linear;
           animation: btn 2.5s infinite linear;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 @-webkit-keyframes btn {
@@ -290,6 +300,11 @@ button {
           transform: translateX(-110%);
 }
 
+.background_image {
+  overflow: hidden;
+  z-index: 100;
+}
+
 .mobile__title {
   max-width: 277px;
   font-family: Alice;
@@ -328,6 +343,7 @@ button {
   height: 50px;
   border: none;
   background-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   cursor: pointer;
 }
 
@@ -623,6 +639,7 @@ button {
   text-align: center;
   padding: 10px;
   color: #866F9F;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .cards__img {
