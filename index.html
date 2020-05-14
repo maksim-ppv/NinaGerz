@@ -6,6 +6,7 @@
     <title>NinaGerz</title>
     <link href="https://fonts.googleapis.com/css?family=Alice&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,10 +15,10 @@
             <nav class="mobile_nav menu">
                 <h2 class="mobile__title">Профессиональный таролог, наследница Высшей Магии Нина Герц</h2>
                 <div class="navbar__links navbar__menu">
-                    <a href="#about" class="navbar__link">Обо мне</a>
-                    <a href="#cards" class="navbar__link">Услуги</a>
-                    <a href="#feedback" class="navbar__link">Отзывы</a>
-                    <a href="#price" class="navbar__link">Стоимость</a>
+                    <a href="#about" class="navbar__link link__mobile">Обо мне</a>
+                    <a href="#cards" class="navbar__link link__mobile">Услуги</a>
+                    <a href="#feedback" class="navbar__link link__mobile">Отзывы</a>
+                    <a href="#price" class="navbar__link link__mobile">Стоимость</a>
                 </div>
                 <div class="navbar__locations">
                     <span class="navbar__location">Беларусь-Минск, ст.м Каменная горка</span>
@@ -52,14 +53,14 @@
                         <span class="menu-button__line"></span>
                     </button>
                 </nav>
-                <h1 class="header__title">Профессиональный таролог, наследница Высшей Магии </br>Нина Герц</h1>
-                <h2 class="header__subtitle">Решу проблему обрядами и молитвами со 100% гарантией позитивного результата</h2>
-                <ul class="header__description">
+                <h1 class="header__title wow fadeInUp" data-wow-delay="0.2s">Профессиональный таролог, наследница Высшей Магии </br>Нина Герц</h1>
+                <h2 class="header__subtitle wow fadeInUp" data-wow-delay="0.3s">Решу проблему обрядами и молитвами со 100% гарантией позитивного результата</h2>
+                <ul class="header__description wow fadeInUp" data-wow-delay="0.4s">
                     <li class="description_li"><img src="./img/7-71119_download-realistic-candle-flame-png-transparent-png.png" alt=""><span>Один вопрос бесплатно</span></li>
                     <li class="description_li"><img src="./img/7-71119_download-realistic-candle-flame-png-transparent-png.png" alt=""><span>Использую только Белую Магию</span></li>
                     <li class="description_li"><img src="./img/7-71119_download-realistic-candle-flame-png-transparent-png.png" alt=""><span>Конфиденциально</span></li>
                 </ul>
-                <div class="header__button">
+                <div class="header__button wow fadeInRight" data-wow-delay="0.6s">
                     <a class="button_viber" href="viber://add?number=375336875101">Viber</a>
                 </div>
             </div>
@@ -69,7 +70,9 @@
     <!-- /.header -->
     <main class="main">
         <section class="about" id="about">
-            <h2 class="about__title">“В моем роду все женщины, всю жизнь отдавали и </br>свой дар направляли на помощь людям”</h2>
+            <div class="about__title_bg">
+                <h2 class="about__title wow fadeInUp" data-wow-delay="0.2s">“В моем роду все женщины, всю жизнь отдавали и </br>свой дар направляли на помощь людям”</h2>
+            </div>
             <div class="about__content">
                 <div class="about__img"><img src="./img/portraitОбомне.png" alt="about__me"></div>
                 <div class="about__me">
@@ -86,7 +89,7 @@
                         </br>
                             По этим и многим другим вопросам вы можете написать мне.</p>
                     </div>          
-                    <div class="about__contact">
+                    <div class="about__contact wow fadeInRight" data-wow-delay="0.2s">
                         <a class="button_viber about__btn" href="viber://add?number=375336875101">Viber</a>
                     </div>
                 </div>
@@ -95,15 +98,15 @@
         <!-- /.about -->
         <section class="cards" id="cards">
             <div class="container">
-                <h2 class="section__title cards__title">
+                <h2 class="section__title cards__title wow fadeInLeft">
                     Чем я могу вам помочь
                 </h2>
-                <span class="section__description cards__description">
+                <span class="section__description cards__description wow fadeInRight">
                     Спектр моих услуг многогранен и уникален.</br>
                     Работаю со старинными обрядами и новыми авторскими методиками
                 </span>
                 <div class="cards__block">
-                    <div class="cards__item" data-number-card="0">
+                    <div class="cards__item wow fadeInLeft" data-wow-delay="0.2s" data-number-card="0">
                         <div class="item__content">
                             <img src="./img/image.png" alt="" class="item__img">
                                 <h3 class="item__title">Любовная магия</h3>
@@ -116,7 +119,7 @@
                         </div>
                         <button class="item__button button__card ">Подробнее..</button>
                     </div>
-                    <div class="cards__item" data-number-card="1">
+                    <div class="cards__item wow fadeInUp" data-wow-delay="0.2s" data-number-card="1">
                         <div class="item__content">
                             <img src="./img/image-3.png" alt="" class="item__img">
                                 <h3 class="item__title">Карьера и бизнес </h3>
@@ -129,7 +132,7 @@
                         </div>
                         <button class="item__button button__card ">Подробнее..</button>
                     </div>
-                    <div class="cards__item" data-number-card="2">
+                    <div class="cards__item wow fadeInRight" data-wow-delay="0.2s" data-number-card="2">
                         <div class="item__content">
                             <img src="./img/image-2.png" alt="" class="item__img">
                                 <h3 class="item__title">Дистанционное гадание</h3>
@@ -141,7 +144,7 @@
                                 </div>
                                 <button class="item__button button__card ">Подробнее..</button>
                     </div>
-                    <div class="cards__item" data-number-card="3">
+                    <div class="cards__item wow fadeInLeft" data-wow-delay="0.2s" data-number-card="3">
                         <div class="item__content">
                             <img src="./img/image-5.png" alt="" class="item__img">
                                 <h3 class="item__title">Обереги</h3>
@@ -155,7 +158,7 @@
                                 </div>
                                 <button class="item__button button__card ">Подробнее..</button>
                     </div>
-                    <div class="cards__item" data-number-card="4">
+                    <div class="cards__item wow fadeInUp" data-wow-delay="0.2s" data-number-card="4">
                         <div class="item__content">
                             <img src="./img/image-6.png" alt="" class="item__img">
                                 <h3 class="item__title">Гадание </h3>
@@ -166,7 +169,7 @@
                                 </div>
                                 <button class="item__button button__card ">Подробнее..</button>
                     </div>
-                    <div class="cards__item" data-number-card="5">
+                    <div class="cards__item wow fadeInRight" data-wow-delay="0.2s" data-number-card="5">
                         <div class="item__content">
                             <img src="./img/image-1.png" alt="" class="item__img">
                                 <h3 class="item__title">Защита и восстановление</h3>
@@ -178,7 +181,7 @@
                                 </div>
                                 <button class="item__button button__card ">Подробнее..</button>
                     </div>
-                    <div class="cards__item" data-number-card="6">
+                    <div class="cards__item wow fadeInLeft" data-wow-delay="0.2s" data-number-card="6">
                         <div class="item__content">
                             <img src="./img/image-4.png" alt="" class="item__img">
                                 <h3 class="item__title">Снятие негативных программ</h3>
@@ -186,7 +189,7 @@
                             </div>
                             <button class="item__button button__card">Подробнее..</button>
                     </div>
-                    <div class="cards__img">
+                    <div class="cards__img wow fadeInRight" data-wow-delay="0.2s">
                         <img src="./img/Image-7.png" alt="foto">
                     </div>
                 </div>
@@ -366,8 +369,8 @@
         <!-- /.cards -->
         <section class="principles">
             <div class="container">
-                <h2 class="section__title principles__title">Принципы работы</h2>
-                <span class="section__description principles__description">Для того чтобы я могла достичь сто процентного результата в своей работе, мне нужно определиться с вашей проблемой и подобрать обряд. </span>
+                <h2 class="section__title principles__title wow fadeInDown" data-wow-delay="0.2s">Принципы работы</h2>
+                <span class="section__description principles__description wow fadeInUp" data-wow-delay="0.2s">Для того чтобы я могла достичь сто процентного результата в своей работе, мне нужно определиться с вашей проблемой и подобрать обряд. </span>
                 <p class="section__text principles__text">Правильно подобранный обряд- это гарантия результата . Для этого я провожу диагностику.</br> 
                 </br>
                     Диагностика- это просмотр ситуации с помощью мантических инструментов или вИденья, и служит она для того, чтобы определить настоящее положение вещей и источники, которые послужили первопричиной для той или иной ситуации.</br> 
@@ -383,8 +386,8 @@
         </section>
         <!-- /.principles -->
         <section class="feedback" id="feedback">
-            <h2 class="section__title feedback__title">Отзывы</h2>
-            <span class="section__description feedback__description">Несмотря на молодой возраст, но многолетнюю  практику, я добилась невозможного в своей сфере. Помощь и поддержку подтверили более 500 человек</span>
+            <h2 class="section__title feedback__title wow fadeInDown" data-wow-delay="0.2s">Отзывы</h2>
+            <span class="section__description feedback__description wow fadeInUp" data-wow-delay="0.2s">Несмотря на молодой возраст, но многолетнюю  практику, я добилась невозможного в своей сфере. Помощь и поддержку подтверили более 500 человек</span>
             <div class="slider">
                 <div class="slider__item"><img src="./img/feedback1.jpg" alt="" class="slider__img"></div>
                 <div class="slider__item"><img src="./img/feedback2.jpg" alt="" class="slider__img"></div>
@@ -401,13 +404,13 @@
         <!-- /.feedback -->
         <section class="price" id="price">
             <div class="container">
-                <div class="section__title price__title">Стоимость</div>
-                <div class="section__description price__description">Вы всегда можете обратиться ко мне если у вас возникнут проблемы в любой сфере вашей жизнедеятельности.</div>
+                <div class="section__title price__title wow fadeInRight" data-wow-delay="0.2s">Стоимость</div>
+                <div class="section__description price__description wow fadeInRight" data-wow-delay="0.6s">Вы всегда можете обратиться ко мне если у вас возникнут проблемы в любой сфере вашей жизнедеятельности.</div>
             </div>
             <!-- /.container -->
             <div class="price__content">
                 <div class="container">
-                    <p class="section__text price__text">Дорогие друзья!</br>
+                    <p class="section__text price__text wow fadeInRight" data-wow-delay="0.8s">Дорогие друзья!</br>
                         Если вы нуждаетесь в помощи, не стоит бояться, нет проблем, которые невозможно решить, не существует вопросов, на которые не сможем найти ответы. Главное, это Ваше желание измениться.
                         </br>
                     </br>
@@ -424,7 +427,7 @@
                                 1100 рос.руб.
                             </span>
                     </p>
-                    <div class="price__btn">
+                    <div class="price__btn wow fadeInRight" data-wow-delay="1s">
                         <a class="button_viber button__price" href="viber://add?number=375336875101">Viber</a>
                     </div>
                 </div>
@@ -457,6 +460,7 @@
     <!-- /.footer -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/burger.js"></script>
     <script src="js/main.js"></script>
 </body>

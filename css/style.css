@@ -172,6 +172,38 @@ button {
   line-height: 10px;
   text-align: center;
   letter-spacing: 2px;
+  -webkit-animation: btn 2.5s infinite linear;
+          animation: btn 2.5s infinite linear;
+}
+
+@-webkit-keyframes btn {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes btn {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 @media (max-width: 768px) {
@@ -355,13 +387,17 @@ button {
 }
 
 .about {
+  padding-bottom: 10px;
   background: #050507;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #050507), to(#010813));
   background: linear-gradient(to bottom, #050507 50%, #010813);
 }
 
-.about__title {
+.about__title_bg {
   background: #050507;
+}
+
+.about__title {
   font-family: Alice;
   font-style: normal;
   font-weight: normal;

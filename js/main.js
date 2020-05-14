@@ -94,3 +94,10 @@ $(document).ready(function() {
     return false;
     });
 });
+
+wow = new WOW({
+  mobile: false,
+  offset: 50
+
+})
+wow.init();

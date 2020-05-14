@@ -1,7 +1,7 @@
 const btn = document.querySelector('.menu-button');
 const menu = document.querySelector('.mobile_nav');
 const burger = document.querySelector('.menu-button__line');
-const navbarLink = document.querySelectorAll('.navbar__link');
+const navbarLink = document.querySelectorAll('.link__mobile');
 
 
 const close = ()=>{
