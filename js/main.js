@@ -1,6 +1,7 @@
 const itemButton = document.querySelectorAll('.button__card'),
     cardsBlock = document.querySelector('.cards__block'),
-    itemModal = document.querySelectorAll('.item__modal');
+    itemModal = document.querySelectorAll('.item__modal'),
+    Body = document.querySelector('body');
 
 const modalOpen = (event) => {
     const target = event.target;
@@ -8,10 +9,10 @@ const modalOpen = (event) => {
     const targetModal = modal.dataset.numberCard;
     itemModal.forEach((item)=>{
         if(item.id == targetModal){
-            item.classList.add('modal__active')
-            const shadow = item.querySelector('.item__shadow')
-            shadow.classList.add('animation__modal')
-
+            item.classList.add('modal__active');
+            const shadow = item.querySelector('.item__shadow');
+            shadow.classList.add('animation__modal');
+            Body.classList.add('overflow-hidden');
         }
     });
 };
@@ -23,8 +24,9 @@ const modalClose = (event)=>{
             const shadowButton = item.querySelector('.shadow__button');
             const shadow = item.querySelector('.item__shadow')
             if(target===modal||target===shadowButton){
-            item.classList.remove('modal__active')
-            shadow.classList.remove('animation__modal')
+            item.classList.remove('modal__active');
+            shadow.classList.remove('animation__modal');
+            Body.classList.remove('overflow-hidden');
         }
     })
         
@@ -79,14 +81,13 @@ const scrollTo = (element)=>{
     })
 };
 
-$(function(){
-
-    $('.up').on('click', function(e){
+$(()=>{
+    $('.up').on('click', (e)=>{
       $('html,body').stop().animate({ scrollTop: $('#header').offset().top }, 1000);
       e.preventDefault();
     });   
 });
-$(document).ready(function() {
+$(document).ready(()=> {
     $("a.navbar__link").click(function () {
     var elementClick = $(this).attr("href")
     var destination = $(elementClick).offset().top;
