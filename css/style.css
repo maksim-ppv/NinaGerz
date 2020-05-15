@@ -55,7 +55,7 @@ button {
 }
 
 .background_image {
-  background: url(../img/i01_portraitmain-min.png) no-repeat;
+  background: url(../img/portraitmain-min.png) no-repeat;
   background-position: 40vw;
   background-size: contain;
   min-height: 800px;
